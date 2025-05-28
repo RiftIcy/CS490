@@ -56,7 +56,7 @@ def delete_student_info(ucid):
 
     try:
         # Send DELETE to url to delete JSON from database
-        response = requests.delete(f"{url}?UCID={ucid}")
+        response = requests.delete(f"{url}?UCID={ucid}") # Can also use this on the website to see uploaded data
         return response
     
     except requests.exceptions.RequestException as e:
